@@ -1,118 +1,133 @@
 :root {
-    --pagepad: 25px;
-    --colorfont: white;
-    --colorbg: black;
+  --pagepad: 25px;
+  --colorfont: white;
+  --colorbg: #1d1d1d;
 }
 
 @font-face {
-    font-family: font1;
-    src: url(fonts/static/Inter-Medium.ttf);
+  font-family: font1;
+  src: url(fonts/static/Inter-Medium.ttf);
 }
 
 * {
-    /* border: 1px solid blue; */
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-family: font1;
-    background-color: var(--colorbg);
-    color: var(--colorfont);
+  /* border: 1px solid blue; */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: font1;
+  /* background-color: var(--colorbg); */
+  color: var(--colorfont);
+}
+
+body {
+  background-color: var(--colorbg);
 }
 
 ul {
-    display: flex;
+  display: flex;
 }
-
 
 /************************* header */
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
-    padding: var(--pagepad);
+  padding: var(--pagepad);
+  font-size: 1.5rem;
 }
 
 header ul {
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 30px;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
 }
-
 
 /************************* main */
 
 main {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .blabla {
-    width: 50vW;
-    padding: var(--pagepad);
+  width: 50vw;
+  padding: var(--pagepad);
 }
 
 .blabla h2 {
-    font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 400;
+}
+.blabla h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #464cfd;
 }
 
 .blabla p {
-    text-align: justify;
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 0.8rem;
 }
 
 .image {
-    border: 1px solid blue;
-    width: 50vmax;
-    padding: 20px;
+  /* border: 1px solid blue; */
+  width: 50vmax;
+  padding: 20px;
 }
 
 img {
-    width: 50vw;
+  width: 50vw;
 }
-
 
 /************************* footer */
 
 footer {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: blue;
-    border-radius: 10px;
-    width: 95%;
+  margin-top: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  width: 95%;
 }
 
 .investors {
-    width: 60%;
+  width: 60%;
+  background-color: #0d0d0d;
 }
 
 .investors img {
-    max-width: 50px;
+  max-height: 50px;
+  width: auto;
 }
 
 .investors ul {
-    justify-content: space-around;
+  justify-content: space-around;
+  height: 80%;
+  align-items: center;
 }
 
 .coretech {
-    min-width: 180px;
+  min-width: 180px;
 }
 
 .coretech h2 {
-    font-size: 1rem;
-    padding-bottom: 10px;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
 }
 
 .coretech a {
-    display: block;
-    font-size: small;
-    padding: 3px;
-    background-color: blue;
-    border-radius: 5px;
-    width: 80px;
-    margin: auto;
-    text-align: center;
+  display: block;
+  font-size: small;
+  padding: 3px;
+  background-color: #474cfe;
+  border-radius: 5px;
+  width: 120px;
+  margin: 10px auto;
+  text-align: center;
 }
