@@ -1,5 +1,3 @@
-/* TP réalisé avec GRID */
-
 :root {
   --pagepad: 25px;
   --colorfont: white;
@@ -26,14 +24,14 @@ body {
 }
 
 ul {
-  display: grid;
+  display: flex;
 }
 
 /************************* header */
 
 header {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -42,23 +40,21 @@ header h1 {
 }
 
 header ul {
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 50%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: 30px;
 }
-header li {
-  text-align: center;
-}
+
 /************************* main */
 
 main {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: center;
+  display: flex;
   align-items: center;
 }
 
 .blabla {
+  width: 50vw;
   padding: var(--pagepad);
 }
 
@@ -78,20 +74,42 @@ main {
   font-size: 0.8rem;
 }
 
+.image {
+  /* border: 1px solid blue; */
+  width: 50vmax;
+  padding: 20px;
+}
+
 img {
-  width: 100%;
+  width: 50vw;
 }
 
 /************************* footer */
 
 footer {
-  margin: 20px 15px 0 15px;
+  margin-top: 20px;
   padding: 15px;
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
+  justify-content: space-between;
   background-color: #0d0d0d;
   border-radius: 10px;
   width: 95%;
+}
+
+.investors {
+  width: 60%;
+  background-color: #0d0d0d;
+}
+
+.investors img {
+  max-height: 50px;
+  width: auto;
+}
+
+.investors ul {
+  justify-content: space-around;
+  height: 80%;
+  align-items: center;
 }
 
 .coretech {
@@ -110,25 +128,6 @@ footer {
   background-color: #474cfe;
   border-radius: 5px;
   width: 120px;
-  margin: 10px 10px;
+  margin: 10px auto;
   text-align: center;
-}
-
-.investors {
-  /* width: 60%; */
-  background-color: #0d0d0d;
-}
-
-.investors img {
-  max-height: 50px;
-  width: auto;
-}
-
-.investors ul {
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 80%;
-  align-items: center;
-}
-.investors li {
-  margin: auto;
 }
