@@ -132,3 +132,32 @@ footer {
 .investors li {
   margin: auto;
 }
+
+@media screen and (max-width: 1200px) {
+  header {
+    display: block;
+  }
+  header h1 {
+    text-align: center;
+  }
+  header ul {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    display: block;
+  }
+  main h2,
+  main h3,
+  main p {
+    text-align: center;
+  }
+  main p {
+    padding: 10px 20%;
+  }
+  main .image {
+    padding: 20px 20%;
+  }
+}
